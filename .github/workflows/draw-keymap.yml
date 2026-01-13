@@ -14,17 +14,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install and Draw
-        uses: caksoylar/keymap-drawer@v0.17.0 # Use uma versão estável em vez de @main
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          keymap_lines: 16
-          output_path: "img/keymap.svg"
-          # Certifique-se de que o caminho para o seu keymap está correto:
-          keymap_path: "config/sofle.keymap"
+          python-version: '3.10'
+      - name: Install keymap-drawer
+        run: pip install keymap-drawer
+      - name: Draw Keymap
+        run: |
+          mkdir -p img
+          keymap-drawer draw config/sofle.keymap > img/keymap.svg
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add img/keymap.svg
-          git commit -m "Update keymap SVG" || echo "No changes to commit"
+          git commit -m "Update keymap SVG" || echo "No changes"
           git push
