@@ -15,11 +15,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install and Draw
-        uses: caksoylar/keymap-drawer@main
+        uses: caksoylar/keymap-drawer@v0.17.0 # Use uma versão estável em vez de @main
         with:
-          keymap_lines: 16 # ajuste para o tamanho do Sofle
-          config_path: "keymap_drawer.config.yaml" # opcional
+          keymap_lines: 16
           output_path: "img/keymap.svg"
+          # Certifique-se de que o caminho para o seu keymap está correto:
+          keymap_path: "config/sofle.keymap"
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
