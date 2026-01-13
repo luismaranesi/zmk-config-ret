@@ -20,13 +20,14 @@ jobs:
           python-version: '3.10'
 
       - name: Install keymap-drawer
-        run: pip install keymap-drawer
+        run: pip install "keymap-drawer>=0.17.0" "tree-sitter<0.22.0"
 
       - name: Draw Keymap
         run: |
           mkdir -p img
-          # Chamamos como módulo do python para evitar o erro 'command not found'
+          # O comando parse transforma seu .keymap em algo que o desenhista entende
           python3 -m keymap_drawer parse -z config/sofle.keymap > sofle_layout.yaml
+          # O comando draw gera o SVG final
           python3 -m keymap_drawer draw sofle_layout.yaml > img/keymap.svg
 
       - name: Commit and Push
