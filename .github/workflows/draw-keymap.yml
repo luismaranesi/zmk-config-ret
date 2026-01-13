@@ -25,10 +25,9 @@ jobs:
       - name: Draw Keymap
         run: |
           mkdir -p img
-          # O comando 'parse' transforma o código ZMK em um formato que o desenho entende
-          keymap-drawer parse -z config/sofle.keymap > sofle_layout.yaml
-          # O comando 'draw' gera o SVG final
-          keymap-drawer draw sofle_layout.yaml > img/keymap.svg
+          # Chamamos como módulo do python para evitar o erro 'command not found'
+          python3 -m keymap_drawer parse -z config/sofle.keymap > sofle_layout.yaml
+          python3 -m keymap_drawer draw sofle_layout.yaml > img/keymap.svg
 
       - name: Commit and Push
         run: |
