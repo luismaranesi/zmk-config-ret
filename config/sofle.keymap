@@ -27,6 +27,31 @@
         };
     };
 
+    behaviors {
+        td_num: td_num {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_NUM";
+            #binding-cells = <0>;
+            bindings = <&mo 1>, <&tog 1>;
+        };
+
+        td_nav: td_nav {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_NAV";
+            #binding-cells = <0>;
+            bindings = <&mo 3>, <&tog 3>;
+        };
+
+        mm_sym_num: mm_sym_num {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_SYM_NUM";
+            bindings = <&td_num>, <&mo 2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -41,11 +66,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC         &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                           &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB         &kp Q   &kp W     &kp E     &kp R      &kp T                            &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BSPC
-&kp LEFT_SHIFT  &kp A   &kp S     &kp D     &kp F      &kp G                            &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z   &kp X     &kp C     &kp V      &kp B   &kp C_MUTE    &none      &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                        &kp LGUI  &kp LALT  &kp LCTRL  &tog 1  &kp ENTER     &kp SPACE  &mo 2   &kp RCTRL  &kp RALT   &kp RGUI
+&kp ESC         &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                &kp N6   &kp N7         &kp N8                &kp N9     &kp N0    &kp MINUS
+&kp TAB         &kp Q   &kp W     &kp E     &kp R      &kp T                                 &kp Y    &kp U          &kp I                 &kp O      &kp P     &kp EQUAL
+&kp LEFT_SHIFT  &kp A   &kp S     &kp D     &kp F      &kp G                                 &kp H    &kp J          &kp K                 &kp L      &kp SEMI  &kp LEFT_BRACKET
+&kp LCTRL       &kp Z   &kp X     &kp C     &kp V      &kp B       &kp C_MUTE     &none      &kp N    &kp M          &kp COMMA             &kp DOT    &kp FSLH  &kp RIGHT_BRACKET
+                        &kp LGUI  &kp LALT  &kp SPACE  &kp DELETE  &mm_sym_num    &kp ENTER  &td_nav  &kp BACKSPACE  &kp NON_US_BACKSLASH  &kp COMMA
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
