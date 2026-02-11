@@ -32,25 +32,23 @@
         ht_numpad: ht_numpad {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_NUMPAD";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
     
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
     
-            tap_bindings = <&tog NUMPAD>;
-            hold_bindings = <&mo NUMPAD>;
+            bindings = <&mo &tog>;
         };
     
         ht_nav: ht_nav {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_NAV";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
     
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
     
-            tap_bindings = <&tog NAV>;
-            hold_bindings = <&mo NAV>;
+            bindings = <&mo &tog>;
         };
     };
 
