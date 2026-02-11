@@ -37,7 +37,8 @@
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
     
-            bindings = <&tog NUMPAD &mo NUMPAD>;
+            tap_bindings = <&tog NUMPAD>;
+            hold_bindings = <&mo NUMPAD>;
         };
     
         ht_nav: ht_nav {
@@ -48,7 +49,8 @@
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
     
-            bindings = <&tog NAV &mo NAV>;
+            tap_bindings = <&tog NAV>;
+            hold_bindings = <&mo NAV>;
         };
     };
 
