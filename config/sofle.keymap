@@ -21,7 +21,7 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-    
+
         adjust_layer {
             if-layers = <NUMPAD SYMBOL>;
             then-layer = <ADJUST>;
@@ -33,22 +33,27 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HT_NUMPAD";
             #binding-cells = <2>;
-    
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
-    
             bindings = <&mo &tog>;
         };
-    
+
         ht_nav: ht_nav {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_NAV";
             #binding-cells = <2>;
-    
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
-    
             bindings = <&mo &tog>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        nav_layer {
+            bindings = <&mo 2>;
+            key-positions = <52 57>;
         };
     };
 
@@ -66,11 +71,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC         &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                &kp N6         &kp N7         &kp N8                &kp N9   &kp N0    &kp MINUS
-&kp TAB         &kp Q   &kp W     &kp E     &kp R      &kp T                                 &kp Y          &kp U          &kp I                 &kp O    &kp P     &kp EQUAL
-&kp LEFT_SHIFT  &kp A   &kp S     &kp D     &kp F      &kp G                                 &kp H          &kp J          &kp K                 &kp L    &kp SEMI  &kp LEFT_BRACKET
-&kp LCTRL       &kp Z   &kp X     &kp C     &kp V      &kp B       &kp C_MUTE     &none      &kp N          &kp M          &kp COMMA             &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                        &kp LGUI  &kp LALT  &kp SPACE  &kp DELETE  &ht_numpad NUMPAD NUMPAD  &kp ENTER  &ht_nav NAV NAV  &kp BACKSPACE  &kp NON_US_BACKSLASH  &kp SQT
+&kp ESC         &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                             &kp N6           &kp N7         &kp N8                &kp N9   &kp N0    &kp MINUS
+&kp TAB         &kp Q   &kp W     &kp E     &kp R      &kp T                                              &kp Y            &kp U          &kp I                 &kp O    &kp P     &kp EQUAL
+&kp LEFT_SHIFT  &kp A   &kp S     &kp D     &kp F      &kp G                                              &kp H            &kp J          &kp K                 &kp L    &kp SEMI  &kp LEFT_BRACKET
+&kp LCTRL       &kp Z   &kp X     &kp C     &kp V      &kp B       &kp C_MUTE                  &none      &kp N            &kp M          &kp COMMA             &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
+                        &kp LGUI  &kp LALT  &kp SPACE  &kp DELETE  &ht_numpad NUMPAD NUMPAD    &kp ENTER  &ht_nav NAV NAV  &kp BACKSPACE  &kp NON_US_BACKSLASH  &kp SQT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -88,11 +93,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp GRAVE  &kp F1     &kp F2     &kp F3    &kp F4    &kp F5                       &kp F6     &kp F7      &kp F8           &kp F9           &kp F10   &kp F11
-&trans     &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                       &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_DIVIDE    &kp N0    &kp F12
-&trans     &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                    &kp KP_N4  &kp KP_N5   &kp KP_N6        &kp KP_MULTIPLY  &kp RPAR  &kp PIPE
-&trans     &kp EQUAL  &kp MINUS  &kp PLUS  &kp LBRC  &kp RBRC   &to 0     &trans  &kp KP_N1  &kp KP_N2   &kp KP_N3        &kp KP_MINUS     &kp BSLH  &trans
-                      &trans     &trans    &trans    &trans     &trans    &trans  &kp KP_N0  &kp KP_DOT  &kp KP_ENTER     &kp KP_PLUS
+&kp GRAVE  &kp F1     &kp F2     &kp F3    &kp F4    &kp F5                       &kp F6     &kp F7      &kp F8        &kp F9           &kp F10   &kp F11
+&trans     &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                       &kp KP_N7  &kp KP_N8   &kp KP_N9     &kp KP_DIVIDE    &kp N0    &kp F12
+&trans     &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                    &kp KP_N4  &kp KP_N5   &kp KP_N6     &kp KP_MULTIPLY  &kp RPAR  &kp PIPE
+&trans     &kp EQUAL  &kp MINUS  &kp PLUS  &kp LBRC  &kp RBRC   &to 0     &trans  &kp KP_N1  &kp KP_N2   &kp KP_N3     &kp KP_MINUS     &kp BSLH  &trans
+                      &trans     &trans    &trans    &trans     &trans    &trans  &kp KP_N0  &kp KP_DOT  &kp KP_ENTER  &kp KP_PLUS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -122,15 +127,13 @@
         nav_layer {
             display-name = "nav";
             bindings = <
-        &trans  &trans    &trans    &trans    &trans    &trans                      &trans     &trans     &trans     &trans     &trans     &trans
-        &trans  &trans    &trans    &trans    &trans    &trans                      &kp HOME   &kp PG_UP  &kp UP     &kp PG_DN  &kp END    &trans
-        &trans  &trans    &trans    &trans    &trans    &trans                      &kp INS    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC
-        &trans  &trans    &trans    &trans    &trans    &trans     &to BASE &trans  &trans     &trans     &trans     &trans     &kp DEL    &trans
-                        &trans      &trans     &trans     &trans     &trans  &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &trans    &trans     &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &kp HOME  &kp PG_UP  &kp UP    &kp PG_DN  &kp END    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &kp INS   &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &kp BSPC
+&trans  &trans  &trans  &trans  &trans  &trans  &to BASE    &trans  &trans    &trans     &trans    &trans     &kp DEL    &trans
+                &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans     &trans    &trans
             >;
         };
-
-
 
         adjust_layer {
             // ----------------------------------------------------------------------------------------------------------------------------
