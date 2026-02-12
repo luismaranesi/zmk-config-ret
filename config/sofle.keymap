@@ -120,15 +120,16 @@
         };
 
         nav_layer {
-    display-name = "nav";
-    bindings = <
-&trans  &trans   &trans   &trans   &trans    &trans                      &trans     &trans     &trans     &trans     &trans     &trans
-&trans  &kp HOME &kp PG_UP &kp UP   &kp PG_DN &kp END                    &trans     &kp HOME   &kp PG_UP  &kp PG_DN  &kp END    &trans
-&trans  &kp INS  &kp LEFT  &kp DOWN &kp RIGHT &kp DEL                    &trans     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC
-&trans  &trans   &trans   &trans   &trans    &trans     &to 0   &trans  &trans     &trans     &trans     &trans     &trans     &trans
-                &trans    &trans    &trans    &trans     &trans  &trans  &trans     &trans     &trans     &trans
-    >;
-};
+        display-name = "nav";
+        bindings = <
+        &trans  &trans    &trans    &trans    &trans    &trans                     &trans     &trans     &trans     &trans     &trans     &trans
+        &trans  &kp HOME  &kp PG_UP  &kp UP    &kp PG_DN &kp END                   &trans     &kp HOME   &kp PG_UP  &kp PG_DN  &kp END    &trans
+        &trans  &kp INS   &kp I      &kp J     &kp K     &kp L                     &trans     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC
+        &trans  &trans    &trans    &trans    &trans    &trans     &to BASE &trans &trans     &trans     &trans     &trans     &trans     &trans
+                         &trans     &trans     &trans     &trans     &trans  &trans &trans     &trans     &trans     &trans
+            >;
+        };
+
 
 
         adjust_layer {
