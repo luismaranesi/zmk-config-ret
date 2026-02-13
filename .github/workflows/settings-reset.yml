@@ -1,0 +1,27 @@
+name: Build settings reset firmware
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup ZMK
+        uses: zmkfirmware/zmk/.github/actions/setup@v0.3
+
+      - name: Build reset firmware
+        run: |
+          west build -s zmk/app -b nice_nano_v2 \
+            -- -DSHIELD=settings_reset \
+            -DZMK_CONFIG=${{ github.workspace }}/config
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: settings-reset
+          path: build/zephyr/zmk.uf2
