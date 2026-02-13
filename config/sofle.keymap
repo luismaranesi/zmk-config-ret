@@ -127,32 +127,25 @@
         adjust_layer {
             display-name = "adjust";
         
-                bindings = <
-                    /* Row 1 — Bluetooth */
-                    &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4        &none  &none  &none  &none  &none  &none
-                    
-                    /* Row 2 — Power / Maintenance */
-                    &ext_power EP_TOG  &soft_off        &bootloader      &none            &none            &none                &none  &none  &none  &none  &none  &none
-                    
-                    /* Row 3 — RGB Controls */
-                    &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_HUI
-                    &rgb_ug RGB_HUD    &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_EFF
-                    &none              &none            &none            &none
-                    
-                    /* Row 4 — System */
-                    &sys_reset         &none            &none            &none            &none            &none
-                    &none              &none            &none            &none            &none            &none  &none  &none
-                    
-                    /* Thumb row */
-                                        &none            &none            &none            &none            &none
-                                        &none            &none            &none            &none            &none
-                        >;
-                    
-                        /* KNOBS NA ADJUST */
-                        sensor-bindings =
-                            <&inc_dec_kp RGB_BRI RGB_BRD
-                             &inc_dec_kp RGB_HUI RGB_HUD>;
-            };
+            bindings = <
+                /* Row 1 — Bluetooth */
+                &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4        &none  &none  &none  &none  &none  &none
+                
+                /* Row 2 — Power / Maintenance */
+                &ext_power EP_TOG  &soft_off        &bootloader      &sys_reset       &none            &none                &none  &none  &none  &none  &none  &none
+                
+                /* Row 3 — RGB core */
+                &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &none            &none            &none            &none                &none  &none  &none  &none  &none  &none
+                
+                /* Row 4 — RGB adjustments */
+                &rgb_ug RGB_BRI    &rgb_ug RGB_BRD  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD
+                &none              &none            &none            &none            &none            &none
+                
+                /* Thumb */
+                                    &none            &none            &none            &none            &none
+                                    &none            &none            &none            &none            &none
+            >;
+        };
 
     };
 };
