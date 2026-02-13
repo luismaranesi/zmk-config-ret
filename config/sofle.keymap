@@ -23,7 +23,7 @@
         compatible = "zmk,conditional-layers";
 
         adjust_layer {
-            if-layers = <NUMPAD SYMBOL>;
+            if-layers = <NUMPAD NAV>;
             then-layer = <ADJUST>;
         };
     };
@@ -31,7 +31,6 @@
     behaviors {
         ht_numpad: ht_numpad {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_NUMPAD";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
@@ -40,7 +39,6 @@
 
         ht_nav: ht_nav {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_NAV";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
@@ -50,10 +48,11 @@
 
     combos {
         compatible = "zmk,combos";
-
-        nav_layer {
-            bindings = <&mo 2>;
-            key-positions = <52 57>;
+    
+        sym_combo {
+            timeout-ms = <50>;
+            key-positions = <53 57>;
+            bindings = <&mo SYMBOL>;
         };
     };
 
@@ -75,7 +74,7 @@
 &kp TAB         &kp Q   &kp W     &kp E     &kp R      &kp T                                              &kp Y            &kp U          &kp I                 &kp O    &kp P     &kp EQUAL
 &kp LEFT_SHIFT  &kp A   &kp S     &kp D     &kp F      &kp G                                              &kp H            &kp J          &kp K                 &kp L    &kp SEMI  &kp LEFT_BRACKET
 &kp LCTRL       &kp Z   &kp X     &kp C     &kp V      &kp B       &kp C_MUTE                  &none      &kp N            &kp M          &kp COMMA             &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                        &kp LGUI  &kp LALT  &kp SPACE  &kp DELETE  &ht_numpad NUMPAD NUMPAD    &kp ENTER  &ht_nav NAV NAV  &kp BACKSPACE  &kp NON_US_BACKSLASH  &kp SQT
+                        &kp LGUI  &kp LALT  &kp SPACE  &kp DELETE  &ht_numpad NUMPAD NUMPAD  &kp ENTER  &ht_nav NAV NAV  &kp SPACE  &kp MINUS  &kp SQT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -104,34 +103,25 @@
         };
 
         symbol_layer {
-            display-name = "symbol";
-
-            // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-            // |       | INS  | PSCR | GUI   |       |      |                | PGUP |      |   ^   |      |       |       |
-            // |       | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
-            // |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
-            //                |      |       |       |      |      |  |      |      |      |       |      |
-
-            bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &trans     &trans   &trans
-&trans  &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
-&trans  &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans  &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &to 0     &trans  &trans     &trans    &trans    &trans     &trans   &trans
-                      &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                display-name = "symbol";
+            
+                bindings = <
+                    &trans  &trans      &trans      &trans      &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                    &trans  &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT                  &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &kp PIPE
+                    &trans  &kp MINUS   &kp EQUAL   &kp PLUS    &kp LBRC    &kp RBRC                   &kp UNDER &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp COLON &kp DQT &kp BSLH
+                    &trans  &kp TILDE   &kp GRAVE   &kp SEMI    &kp SQT     &trans     &to BASE &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                      &trans        &trans      &trans      &trans      &trans   &trans  &kp MINUS  &trans  &trans  &trans
+                >;
         };
 
         nav_layer {
             display-name = "nav";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                      &trans    &trans     &trans    &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                      &kp HOME  &kp PG_UP  &kp UP    &kp PG_DN  &kp END    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                      &kp INS   &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &kp BSPC
-&trans  &trans  &trans  &trans  &trans  &trans  &to BASE    &trans  &trans    &trans     &trans    &trans     &kp DEL    &trans
-                &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans     &trans    &trans
+        &trans  &trans  &trans  &trans  &trans  &trans                      &trans     &trans     &trans     &trans     &trans        &trans
+        &trans  &trans  &trans  &trans  &trans  &trans                      &kp HOME   &kp PG_UP  &kp UP     &kp PG_DN  &kp END      &tog ADJUST
+        &trans  &trans  &trans  &trans  &trans  &trans                      &kp INS    &kp LEFT   &kp DOWN   &kp RIGHT  &kp DEL      &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &to BASE   &trans   &trans     &trans     &trans     &trans     &trans       &trans
+                        &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans     &trans     &trans
             >;
         };
 
