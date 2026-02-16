@@ -54,6 +54,31 @@
             key-positions = <53 57>;
             bindings = <&mo SYMBOL>;
         };
+
+        sc-bt0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <52 1>;
+        };
+
+        sc-bt1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <52 2>;
+        };
+
+        sc-bt2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <52 3>;
+        };
+
+        sc-bt3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <52 4>;
+        };
+
+        sc-bt4 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <52 5>;
+        };
     };
 
     keymap {
