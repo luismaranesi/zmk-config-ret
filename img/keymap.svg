@@ -295,6 +295,9 @@ path.combo {
 </g>
 <g transform="translate(525, 210)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">BT</tspan><tspan x="0" dy="1.2em">NXT</tspan>
+</text>
 </g>
 <g transform="translate(588, 210)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -374,39 +377,39 @@ path.combo {
 <text x="480" y="267" class="combo tap layer-activator">symbol</text>
 </a></g>
 <g class="combo combopos-1">
-<path d="M168,161 l72,84" class="combo"/>
-<path d="M168,161 l-72,-84" class="combo"/>
-<rect rx="6" ry="6" x="154" y="148" width="28" height="26" class="combo"/>
-<text x="168" y="161" class="combo tap">BT</text>
-<text x="168" y="172" class="combo hold">0</text>
+<path d="M364,161 l-262,-92" class="combo"/>
+<path d="M364,161 l262,92" class="combo"/>
+<rect rx="6" ry="6" x="350" y="148" width="28" height="26" class="combo"/>
+<text x="364" y="161" class="combo tap">BT</text>
+<text x="364" y="172" class="combo hold">0</text>
 </g>
 <g class="combo combopos-2">
-<path d="M196,147 l48,95" class="combo"/>
-<path d="M196,147 l-48,-95" class="combo"/>
-<rect rx="6" ry="6" x="182" y="134" width="28" height="26" class="combo"/>
-<text x="196" y="147" class="combo tap">BT</text>
-<text x="196" y="158" class="combo hold">1</text>
+<path d="M392,147 l-235,-104" class="combo"/>
+<path d="M392,147 l235,104" class="combo"/>
+<rect rx="6" ry="6" x="378" y="134" width="28" height="26" class="combo"/>
+<text x="392" y="147" class="combo tap">BT</text>
+<text x="392" y="158" class="combo hold">1</text>
 </g>
 <g class="combo combopos-3">
-<path d="M224,144 l24,97" class="combo"/>
-<path d="M224,144 l-24,-97" class="combo"/>
-<rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
-<text x="224" y="144" class="combo tap">BT</text>
-<text x="224" y="154" class="combo hold">2</text>
+<path d="M420,144 l-207,-107" class="combo"/>
+<path d="M420,144 l207,107" class="combo"/>
+<rect rx="6" ry="6" x="406" y="130" width="28" height="26" class="combo"/>
+<text x="420" y="144" class="combo tap">BT</text>
+<text x="420" y="154" class="combo hold">2</text>
 </g>
 <g class="combo combopos-4">
-<path d="M252,147 l0,93" class="combo"/>
-<path d="M252,147 l0,-93" class="combo"/>
-<rect rx="6" ry="6" x="238" y="134" width="28" height="26" class="combo"/>
-<text x="252" y="147" class="combo tap">BT</text>
-<text x="252" y="158" class="combo hold">3</text>
+<path d="M448,147 l-180,-103" class="combo"/>
+<path d="M448,147 l180,103" class="combo"/>
+<rect rx="6" ry="6" x="434" y="134" width="28" height="26" class="combo"/>
+<text x="448" y="147" class="combo tap">BT</text>
+<text x="448" y="158" class="combo hold">3</text>
 </g>
 <g class="combo combopos-5">
-<path d="M280,150 l-23,90" class="combo"/>
-<path d="M280,150 l23,-90" class="combo"/>
-<rect rx="6" ry="6" x="266" y="138" width="28" height="26" class="combo"/>
-<text x="280" y="150" class="combo tap">BT</text>
-<text x="280" y="162" class="combo hold">4</text>
+<path d="M476,150 l-152,-98" class="combo"/>
+<path d="M476,150 l152,98" class="combo"/>
+<rect rx="6" ry="6" x="462" y="138" width="28" height="26" class="combo"/>
+<text x="476" y="150" class="combo tap">BT</text>
+<text x="476" y="162" class="combo hold">4</text>
 </g>
 </g>
 </g>
@@ -694,39 +697,39 @@ path.combo {
 <text x="480" y="267" class="combo tap layer-activator">symbol</text>
 </a></g>
 <g class="combo combopos-1">
-<path d="M168,161 l72,84" class="combo"/>
-<path d="M168,161 l-72,-84" class="combo"/>
-<rect rx="6" ry="6" x="154" y="148" width="28" height="26" class="combo"/>
-<text x="168" y="161" class="combo tap">BT</text>
-<text x="168" y="172" class="combo hold">0</text>
+<path d="M364,161 l-262,-92" class="combo"/>
+<path d="M364,161 l262,92" class="combo"/>
+<rect rx="6" ry="6" x="350" y="148" width="28" height="26" class="combo"/>
+<text x="364" y="161" class="combo tap">BT</text>
+<text x="364" y="172" class="combo hold">0</text>
 </g>
 <g class="combo combopos-2">
-<path d="M196,147 l48,95" class="combo"/>
-<path d="M196,147 l-48,-95" class="combo"/>
-<rect rx="6" ry="6" x="182" y="134" width="28" height="26" class="combo"/>
-<text x="196" y="147" class="combo tap">BT</text>
-<text x="196" y="158" class="combo hold">1</text>
+<path d="M392,147 l-235,-104" class="combo"/>
+<path d="M392,147 l235,104" class="combo"/>
+<rect rx="6" ry="6" x="378" y="134" width="28" height="26" class="combo"/>
+<text x="392" y="147" class="combo tap">BT</text>
+<text x="392" y="158" class="combo hold">1</text>
 </g>
 <g class="combo combopos-3">
-<path d="M224,144 l24,97" class="combo"/>
-<path d="M224,144 l-24,-97" class="combo"/>
-<rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
-<text x="224" y="144" class="combo tap">BT</text>
-<text x="224" y="154" class="combo hold">2</text>
+<path d="M420,144 l-207,-107" class="combo"/>
+<path d="M420,144 l207,107" class="combo"/>
+<rect rx="6" ry="6" x="406" y="130" width="28" height="26" class="combo"/>
+<text x="420" y="144" class="combo tap">BT</text>
+<text x="420" y="154" class="combo hold">2</text>
 </g>
 <g class="combo combopos-4">
-<path d="M252,147 l0,93" class="combo"/>
-<path d="M252,147 l0,-93" class="combo"/>
-<rect rx="6" ry="6" x="238" y="134" width="28" height="26" class="combo"/>
-<text x="252" y="147" class="combo tap">BT</text>
-<text x="252" y="158" class="combo hold">3</text>
+<path d="M448,147 l-180,-103" class="combo"/>
+<path d="M448,147 l180,103" class="combo"/>
+<rect rx="6" ry="6" x="434" y="134" width="28" height="26" class="combo"/>
+<text x="448" y="147" class="combo tap">BT</text>
+<text x="448" y="158" class="combo hold">3</text>
 </g>
 <g class="combo combopos-5">
-<path d="M280,150 l-23,90" class="combo"/>
-<path d="M280,150 l23,-90" class="combo"/>
-<rect rx="6" ry="6" x="266" y="138" width="28" height="26" class="combo"/>
-<text x="280" y="150" class="combo tap">BT</text>
-<text x="280" y="162" class="combo hold">4</text>
+<path d="M476,150 l-152,-98" class="combo"/>
+<path d="M476,150 l152,98" class="combo"/>
+<rect rx="6" ry="6" x="462" y="138" width="28" height="26" class="combo"/>
+<text x="476" y="150" class="combo tap">BT</text>
+<text x="476" y="162" class="combo hold">4</text>
 </g>
 </g>
 </g>
@@ -981,39 +984,39 @@ path.combo {
 <text x="480" y="267" class="combo tap layer-activator">symbol</text>
 </a></g>
 <g class="combo combopos-1">
-<path d="M168,161 l72,84" class="combo"/>
-<path d="M168,161 l-72,-84" class="combo"/>
-<rect rx="6" ry="6" x="154" y="148" width="28" height="26" class="combo"/>
-<text x="168" y="161" class="combo tap">BT</text>
-<text x="168" y="172" class="combo hold">0</text>
+<path d="M364,161 l-262,-92" class="combo"/>
+<path d="M364,161 l262,92" class="combo"/>
+<rect rx="6" ry="6" x="350" y="148" width="28" height="26" class="combo"/>
+<text x="364" y="161" class="combo tap">BT</text>
+<text x="364" y="172" class="combo hold">0</text>
 </g>
 <g class="combo combopos-2">
-<path d="M196,147 l48,95" class="combo"/>
-<path d="M196,147 l-48,-95" class="combo"/>
-<rect rx="6" ry="6" x="182" y="134" width="28" height="26" class="combo"/>
-<text x="196" y="147" class="combo tap">BT</text>
-<text x="196" y="158" class="combo hold">1</text>
+<path d="M392,147 l-235,-104" class="combo"/>
+<path d="M392,147 l235,104" class="combo"/>
+<rect rx="6" ry="6" x="378" y="134" width="28" height="26" class="combo"/>
+<text x="392" y="147" class="combo tap">BT</text>
+<text x="392" y="158" class="combo hold">1</text>
 </g>
 <g class="combo combopos-3">
-<path d="M224,144 l24,97" class="combo"/>
-<path d="M224,144 l-24,-97" class="combo"/>
-<rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
-<text x="224" y="144" class="combo tap">BT</text>
-<text x="224" y="154" class="combo hold">2</text>
+<path d="M420,144 l-207,-107" class="combo"/>
+<path d="M420,144 l207,107" class="combo"/>
+<rect rx="6" ry="6" x="406" y="130" width="28" height="26" class="combo"/>
+<text x="420" y="144" class="combo tap">BT</text>
+<text x="420" y="154" class="combo hold">2</text>
 </g>
 <g class="combo combopos-4">
-<path d="M252,147 l0,93" class="combo"/>
-<path d="M252,147 l0,-93" class="combo"/>
-<rect rx="6" ry="6" x="238" y="134" width="28" height="26" class="combo"/>
-<text x="252" y="147" class="combo tap">BT</text>
-<text x="252" y="158" class="combo hold">3</text>
+<path d="M448,147 l-180,-103" class="combo"/>
+<path d="M448,147 l180,103" class="combo"/>
+<rect rx="6" ry="6" x="434" y="134" width="28" height="26" class="combo"/>
+<text x="448" y="147" class="combo tap">BT</text>
+<text x="448" y="158" class="combo hold">3</text>
 </g>
 <g class="combo combopos-5">
-<path d="M280,150 l-23,90" class="combo"/>
-<path d="M280,150 l23,-90" class="combo"/>
-<rect rx="6" ry="6" x="266" y="138" width="28" height="26" class="combo"/>
-<text x="280" y="150" class="combo tap">BT</text>
-<text x="280" y="162" class="combo hold">4</text>
+<path d="M476,150 l-152,-98" class="combo"/>
+<path d="M476,150 l152,98" class="combo"/>
+<rect rx="6" ry="6" x="462" y="138" width="28" height="26" class="combo"/>
+<text x="476" y="150" class="combo tap">BT</text>
+<text x="476" y="162" class="combo hold">4</text>
 </g>
 </g>
 </g>
@@ -1275,39 +1278,39 @@ path.combo {
 <text x="480" y="267" class="combo tap layer-activator">symbol</text>
 </a></g>
 <g class="combo combopos-1">
-<path d="M168,161 l72,84" class="combo"/>
-<path d="M168,161 l-72,-84" class="combo"/>
-<rect rx="6" ry="6" x="154" y="148" width="28" height="26" class="combo"/>
-<text x="168" y="161" class="combo tap">BT</text>
-<text x="168" y="172" class="combo hold">0</text>
+<path d="M364,161 l-262,-92" class="combo"/>
+<path d="M364,161 l262,92" class="combo"/>
+<rect rx="6" ry="6" x="350" y="148" width="28" height="26" class="combo"/>
+<text x="364" y="161" class="combo tap">BT</text>
+<text x="364" y="172" class="combo hold">0</text>
 </g>
 <g class="combo combopos-2">
-<path d="M196,147 l48,95" class="combo"/>
-<path d="M196,147 l-48,-95" class="combo"/>
-<rect rx="6" ry="6" x="182" y="134" width="28" height="26" class="combo"/>
-<text x="196" y="147" class="combo tap">BT</text>
-<text x="196" y="158" class="combo hold">1</text>
+<path d="M392,147 l-235,-104" class="combo"/>
+<path d="M392,147 l235,104" class="combo"/>
+<rect rx="6" ry="6" x="378" y="134" width="28" height="26" class="combo"/>
+<text x="392" y="147" class="combo tap">BT</text>
+<text x="392" y="158" class="combo hold">1</text>
 </g>
 <g class="combo combopos-3">
-<path d="M224,144 l24,97" class="combo"/>
-<path d="M224,144 l-24,-97" class="combo"/>
-<rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
-<text x="224" y="144" class="combo tap">BT</text>
-<text x="224" y="154" class="combo hold">2</text>
+<path d="M420,144 l-207,-107" class="combo"/>
+<path d="M420,144 l207,107" class="combo"/>
+<rect rx="6" ry="6" x="406" y="130" width="28" height="26" class="combo"/>
+<text x="420" y="144" class="combo tap">BT</text>
+<text x="420" y="154" class="combo hold">2</text>
 </g>
 <g class="combo combopos-4">
-<path d="M252,147 l0,93" class="combo"/>
-<path d="M252,147 l0,-93" class="combo"/>
-<rect rx="6" ry="6" x="238" y="134" width="28" height="26" class="combo"/>
-<text x="252" y="147" class="combo tap">BT</text>
-<text x="252" y="158" class="combo hold">3</text>
+<path d="M448,147 l-180,-103" class="combo"/>
+<path d="M448,147 l180,103" class="combo"/>
+<rect rx="6" ry="6" x="434" y="134" width="28" height="26" class="combo"/>
+<text x="448" y="147" class="combo tap">BT</text>
+<text x="448" y="158" class="combo hold">3</text>
 </g>
 <g class="combo combopos-5">
-<path d="M280,150 l-23,90" class="combo"/>
-<path d="M280,150 l23,-90" class="combo"/>
-<rect rx="6" ry="6" x="266" y="138" width="28" height="26" class="combo"/>
-<text x="280" y="150" class="combo tap">BT</text>
-<text x="280" y="162" class="combo hold">4</text>
+<path d="M476,150 l-152,-98" class="combo"/>
+<path d="M476,150 l152,98" class="combo"/>
+<rect rx="6" ry="6" x="462" y="138" width="28" height="26" class="combo"/>
+<text x="476" y="150" class="combo tap">BT</text>
+<text x="476" y="162" class="combo hold">4</text>
 </g>
 </g>
 </g>
@@ -1569,39 +1572,39 @@ path.combo {
 <text x="480" y="267" class="combo tap layer-activator">symbol</text>
 </a></g>
 <g class="combo combopos-1">
-<path d="M168,161 l72,84" class="combo"/>
-<path d="M168,161 l-72,-84" class="combo"/>
-<rect rx="6" ry="6" x="154" y="148" width="28" height="26" class="combo"/>
-<text x="168" y="161" class="combo tap">BT</text>
-<text x="168" y="172" class="combo hold">0</text>
+<path d="M364,161 l-262,-92" class="combo"/>
+<path d="M364,161 l262,92" class="combo"/>
+<rect rx="6" ry="6" x="350" y="148" width="28" height="26" class="combo"/>
+<text x="364" y="161" class="combo tap">BT</text>
+<text x="364" y="172" class="combo hold">0</text>
 </g>
 <g class="combo combopos-2">
-<path d="M196,147 l48,95" class="combo"/>
-<path d="M196,147 l-48,-95" class="combo"/>
-<rect rx="6" ry="6" x="182" y="134" width="28" height="26" class="combo"/>
-<text x="196" y="147" class="combo tap">BT</text>
-<text x="196" y="158" class="combo hold">1</text>
+<path d="M392,147 l-235,-104" class="combo"/>
+<path d="M392,147 l235,104" class="combo"/>
+<rect rx="6" ry="6" x="378" y="134" width="28" height="26" class="combo"/>
+<text x="392" y="147" class="combo tap">BT</text>
+<text x="392" y="158" class="combo hold">1</text>
 </g>
 <g class="combo combopos-3">
-<path d="M224,144 l24,97" class="combo"/>
-<path d="M224,144 l-24,-97" class="combo"/>
-<rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
-<text x="224" y="144" class="combo tap">BT</text>
-<text x="224" y="154" class="combo hold">2</text>
+<path d="M420,144 l-207,-107" class="combo"/>
+<path d="M420,144 l207,107" class="combo"/>
+<rect rx="6" ry="6" x="406" y="130" width="28" height="26" class="combo"/>
+<text x="420" y="144" class="combo tap">BT</text>
+<text x="420" y="154" class="combo hold">2</text>
 </g>
 <g class="combo combopos-4">
-<path d="M252,147 l0,93" class="combo"/>
-<path d="M252,147 l0,-93" class="combo"/>
-<rect rx="6" ry="6" x="238" y="134" width="28" height="26" class="combo"/>
-<text x="252" y="147" class="combo tap">BT</text>
-<text x="252" y="158" class="combo hold">3</text>
+<path d="M448,147 l-180,-103" class="combo"/>
+<path d="M448,147 l180,103" class="combo"/>
+<rect rx="6" ry="6" x="434" y="134" width="28" height="26" class="combo"/>
+<text x="448" y="147" class="combo tap">BT</text>
+<text x="448" y="158" class="combo hold">3</text>
 </g>
 <g class="combo combopos-5">
-<path d="M280,150 l-23,90" class="combo"/>
-<path d="M280,150 l23,-90" class="combo"/>
-<rect rx="6" ry="6" x="266" y="138" width="28" height="26" class="combo"/>
-<text x="280" y="150" class="combo tap">BT</text>
-<text x="280" y="162" class="combo hold">4</text>
+<path d="M476,150 l-152,-98" class="combo"/>
+<path d="M476,150 l152,98" class="combo"/>
+<rect rx="6" ry="6" x="462" y="138" width="28" height="26" class="combo"/>
+<text x="476" y="150" class="combo tap">BT</text>
+<text x="476" y="162" class="combo hold">4</text>
 </g>
 </g>
 </g>
