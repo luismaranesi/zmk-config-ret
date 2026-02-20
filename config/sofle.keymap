@@ -47,10 +47,8 @@
 
         ht_0bt_1: ht_0bt_1 {
             compatible = "zmk,behavior-hold-tap";
-            
-            #bindings = <&bt>, <&kp>;
-            bindings = <&bt &kp>;
             #binding-cells = <2>;
+            bindings = <&bt &kp>;            
             tapping-term-ms = <500>;
         };
     };
