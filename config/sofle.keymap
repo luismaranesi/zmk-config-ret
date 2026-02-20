@@ -48,7 +48,7 @@
         ht_0bt_1: ht_0bt_1 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            bindings = <&bt &kp>;            
+            bindings = <&bt &kp>;
             tapping-term-ms = <500>;
         };
     };
@@ -77,11 +77,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC         &ht_0bt_1 BT_SEL NUMBER_1 0  &ht_0bt_1 BT_SEL NUMBER_2 1  &ht_0bt_1 BT_SEL NUMBER_3 2  &ht_0bt_1 BT_SEL NUMBER_4 3  &ht_0bt_1 BT_SEL NUMBER_5 4                            &kp N6     &kp N7       &kp N8                &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB         &kp Q                        &kp W                        &kp E                        &kp R                        &kp T                                                  &kp Y      &kp U        &kp I                 &kp O    &kp P     &kp EQUAL
-&kp LEFT_SHIFT  &kp A                        &kp S                        &kp D                        &kp F                        &kp G                                                  &kp H      &kp J        &kp K                 &kp L    &kp SEMI  &kp LEFT_BRACKET
-&kp LCTRL       &kp Z                        &kp X                        &kp C                        &kp V                        &kp B                        &kp C_MUTE    &bt BT_NXT  &kp N      &kp M        &kp COMMA             &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                                             &kp LGUI                     &kp LALT                     &ht_numpad 1 1               &kp DELETE                   &kp SPACE     &kp ENTER   &kp SPACE  &ht_nav 3 3  &kp NON_US_BACKSLASH  &kp SQT
+&kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                    &kp N6     &kp N7     &kp N8                &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T                                     &kp Y      &kp U      &kp I                 &kp O    &kp P     &kp EQUAL
+&kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F         &kp G                                     &kp H      &kp J      &kp K                 &kp L    &kp SEMI  &kp LEFT_BRACKET
+&kp LCTRL       &kp Z         &kp X         &kp C         &kp V         &kp B      &kp C_MUTE        &bt BT_NXT   &kp N      &kp M      &kp COMMA             &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
+                              &kp LGUI      &kp LALT      &kp DELETE    &kp SPACE  &ht_numpad 1 1    &ht_nav 3 3  &kp SPACE  &kp ENTER  &kp NON_US_BACKSLASH  &kp SQT
             >;
 
             sensor-bindings =
