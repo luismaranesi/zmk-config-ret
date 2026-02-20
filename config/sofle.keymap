@@ -94,7 +94,7 @@
 
         adjut_from_left {
             bindings = <&to 4>;
-            key-positions = <42 41 54>;
+            key-positions = <54 50 51>;
         };
     };
 
