@@ -61,6 +61,36 @@
             key-positions = <53 57>;
             bindings = <&mo SYMBOL>;
         };
+
+        c_bt0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <1 43>;
+            timeout-ms = <50>;
+        };
+
+        c_bt1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <43 2>;
+            timeout-ms = <50>;
+        };
+
+        c_bt2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <43 3>;
+            timeout-ms = <50>;
+        };
+
+        c_bt3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <43 4>;
+            timeout-ms = <50>;
+        };
+
+        c_bt4 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <43 5>;
+            timeout-ms = <50>;
+        };
     };
 
     keymap {
