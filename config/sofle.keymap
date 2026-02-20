@@ -91,6 +91,11 @@
             key-positions = <43 5>;
             timeout-ms = <50>;
         };
+
+        adjut_from_left {
+            bindings = <&to 4>;
+            key-positions = <42 41 54>;
+        };
     };
 
     keymap {
