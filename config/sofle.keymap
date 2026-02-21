@@ -19,14 +19,14 @@
 / {
     // Activate ADJUST layer by pressing raise and lower
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
+    // conditional_layers {
+    //     compatible = "zmk,conditional-layers";
 
-        adjust_layer {
-            if-layers = <NUMPAD NAV>;
-            then-layer = <ADJUST>;
-        };
-    };
+        // adjust_layer {
+        //     if-layers = <NUMPAD NAV>;
+        //     then-layer = <ADJUST>;
+        // };
+    // };
 
     behaviors {
         ht_numpad: ht_numpad {
