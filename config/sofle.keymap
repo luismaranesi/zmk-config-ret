@@ -61,9 +61,9 @@
                               &kp LGUI      &kp LALT      &kp DELETE    &kp SPACE  &ht_numpad 1 1    &ht_nav 3 3  &kp SPACE  &kp ENTER  &kp NON_US_BACKSLASH  &kp SQT
             >;
 
-            // sensor-bindings =
-            //     <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-            //     <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PG_DN PG_UP>;
         };
 
         numpad_layer {
