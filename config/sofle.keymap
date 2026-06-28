@@ -46,6 +46,12 @@
             bindings = <&mo SYMBOL>;
         };
 
+        adjust_combo {
+            timeout-ms = <50>;
+            key-positions = <54 55>;
+            bindings = <&mo ADJUST>;
+        };
+
     };
 
     keymap {
@@ -57,7 +63,7 @@
 &kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                    &kp N6     &kp N7     &kp N8                &kp N9   &kp N0    &kp BACKSPACE
 &kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T                                     &kp Y      &kp U      &kp I                 &kp O    &kp P     &kp EQUAL
 &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F         &kp G                                     &kp H      &kp J      &kp K                 &kp L    &kp SEMI  &kp LEFT_BRACKET
-&kp LCTRL       &kp Z         &kp X         &kp C         &kp V         &kp B      &to ADJUST        &kp C_MUTE        &kp N      &kp M      &kp COMMA             &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
+&kp LCTRL       &kp Z         &kp X         &kp C         &kp V         &kp B      &none             &kp C_MUTE        &kp N      &kp M      &kp COMMA             &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
                               &kp LGUI      &kp LALT      &kp DELETE    &kp SPACE  &ht_numpad 1 1    &ht_nav 3 3  &kp SPACE  &kp ENTER  &kp NON_US_BACKSLASH  &kp SQT
             >;
 
@@ -83,19 +89,19 @@
         symbol_layer {
             display-name = "symbol";
             bindings = <
-&kp GRAVE  &trans     &trans     &trans    &trans    &trans                         &trans     &trans            &trans             &trans     &trans    &kp MINUS
-&kp TILDE  &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                      &kp CARET  &kp AMPS          &kp STAR           &kp LPAR   &kp RPAR  &kp PIPE
-&kp MINUS  &kp MINUS  &kp EQUAL  &kp PLUS  &kp LBRC  &kp RBRC                       &kp UNDER  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON  &kp DQT   &kp BSLH
-&trans     &kp TILDE  &kp GRAVE  &kp SEMI  &kp SQT   &trans     &to BASE    &trans  &trans     &trans            &trans             &trans     &trans    &trans
-                      &trans     &trans    &trans    &trans     &trans      &trans  &kp MINUS  &trans            &trans             &trans
+&kp GRAVE  &trans     &trans     &trans    &trans    &trans                         &trans              &trans             &trans    &trans    &trans    &kp MINUS
+&kp TILDE  &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                      &kp CARET           &kp AMPS           &kp STAR  &kp LPAR  &kp RPAR  &kp PIPE
+&trans     &kp MINUS  &kp EQUAL  &kp PLUS  &kp UNDER &kp PIPE                       &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LBRC  &kp RBRC  &kp COLON &kp BSLH
+&trans     &kp GRAVE  &kp TILDE  &kp BSLH  &kp FSLH  &kp QMARK  &trans     &trans  &kp LT             &kp GT             &kp SQT   &kp DQT   &kp SEMI  &trans
+                      &trans     &trans    &trans    &trans     &trans      &trans  &trans             &trans             &trans     &trans
             >;
         };
 
         nav_layer {
             display-name = "nav";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                      &trans    &trans     &trans    &trans     &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                      &kp HOME  &kp PG_UP  &kp UP    &kp PG_DN  &kp END  &tog ADJUST
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4              &trans    &trans     &trans    &trans     &trans   &trans
+&trans  &trans        &trans        &trans        &trans        &trans                    &kp HOME  &kp PG_UP  &kp UP    &kp PG_DN  &kp END  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                      &kp INS   &kp LEFT   &kp DOWN  &kp RIGHT  &kp DEL  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &to BASE    &trans  &trans    &trans     &trans    &trans     &trans   &trans
                 &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans     &trans    &trans
